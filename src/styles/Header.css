@@ -1,0 +1,97 @@
+/* Header Container */
+header {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align everything to the left */
+    justify-content: space-between;
+  }
+  
+  /* Title */
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .header-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px; /* Slightly shift title left */
+  }
+  
+  /* Hamburger Icon */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Navigation Menu */
+  nav.nav-menu {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    align-items: center;
+    gap: 15px;
+    transition: max-height 0.3s ease;
+    flex-wrap: wrap; /* Ensure buttons wrap in responsive views */
+  }
+  
+  nav.nav-menu button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav.nav-menu button:hover {
+    background-color: #f39c12;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+      margin-left: 10px; /* Align hamburger with left-aligned content */
+    }
+  
+    nav.nav-menu {
+      flex-direction: column;
+      gap: 10px;
+      max-height: 0; /* Hidden by default */
+      overflow: hidden;
+      width: 100%;
+      background-color: #333;
+      padding: 10px;
+      align-items: flex-start; /* Ensure buttons align left in responsive */
+    }
+  
+    nav.nav-menu.open {
+      max-height: 300px; /* Adjust as needed for visible items */
+    }
+  
+    nav.nav-menu button {
+      width: 100%; /* Ensure buttons don't overflow */
+      text-align: left; /* Align button text to the left */
+    }
+  }
+  

@@ -1,0 +1,95 @@
+.listings-container {
+    padding: 20px;
+  }
+  
+  .homestays-listing,
+  .activities-listing {
+    margin-bottom: 30px;
+  }
+  
+  .homestay-cards,
+  .activity-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .view-details {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .view-details:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Add at the bottom of your existing Listings.css file */
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .listing-container {
+      padding: 15px;
+    }
+  
+    .listing-card {
+      margin-bottom: 20px; /* Space between cards */
+      padding: 10px;
+      width: 100%; /* Make cards take up full width */
+    }
+  
+    .listing-card img {
+      width: 100%; /* Ensure images fill the width of the card */
+      height: auto;
+    }
+  
+    .card-body {
+      padding: 10px;
+    }
+  
+    .card-title {
+      font-size: 1.2rem; /* Adjust card title font size */
+    }
+  
+    .view-details-button {
+      font-size: 14px; /* Smaller button text */
+    }
+  }
+  
+  /* Tablets (portrait) */
+  @media (max-width: 1024px) {
+    .listing-card {
+      width: 48%; /* Two cards per row */
+    }
+  }
+  

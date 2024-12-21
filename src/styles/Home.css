@@ -1,0 +1,252 @@
+/* General container */
+.home-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Banner section */
+  .banner {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .banner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  .banner p {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Top Homestays Section */
+  .top-homestays {
+    margin-bottom: 40px;
+  }
+  .top-homestays h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .homestay-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  .homestay-cards .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .homestay-cards .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .homestay-cards .card h3 {
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+  .homestay-cards .card p {
+    margin: 10px;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Featured Activities Section */
+  .featured-activities {
+    margin-bottom: 40px;
+  }
+  .featured-activities h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .activity-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  .activity-cards .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .activity-cards .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .activity-cards .card h3 {
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+  .activity-cards .card p {
+    margin: 10px;
+    font-size: 1rem;
+    color: #666;
+  }
+
+
+  
+/* Mobile */
+@media (max-width: 768px) {
+  .banner {
+    background-size: cover;
+    background-position: center;
+    height: 250px; /* Adjust height for mobile */
+  }
+
+  .banner-text h1 {
+    font-size: 1.5rem; /* Smaller heading size */
+    text-align: center;
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 1.4rem; /* Smaller section titles for mobile */
+    text-align: center;
+  }
+
+  .card {
+    width: 100%; /* Full width cards on mobile */
+    margin-bottom: 20px; /* Space between cards */
+  }
+
+  .card img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%; /* Full-width buttons */
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin-bottom: 10px; /* Stack navbar items vertically */
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .banner {
+    background-size: cover;
+    height: 300px;
+  }
+
+  .banner-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .homestay-container, .activity-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-content {
+    padding: 30px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .banner {
+    height: 400px; /* Larger height for desktops */
+  }
+
+  .banner-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .homestay-container, .activity-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 15px 30px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-content {
+    padding: 40px;
+  }
+}
