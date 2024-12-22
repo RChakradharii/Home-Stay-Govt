@@ -7,8 +7,8 @@ const Home = () => {
       {/* Banner Section */}
       <div className="banner">
         <img src="/assets/banner.jpg" alt="Dantewada Landscape" />
-        <h1>Welcome to Dantewada</h1>
-        <p>Discover the beauty of landscapes and vibrant culture.</p>
+        {/* <h1>Welcome to Dantewada</h1> */}
+        {/* <p>Discover the beauty of landscapes and vibrant culture.</p> */}
       </div>
 
       {/* Top Homestays Section */}

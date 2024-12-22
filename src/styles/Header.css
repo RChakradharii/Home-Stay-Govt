@@ -23,6 +23,7 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    color: white;
   }
   
   /* Hamburger Menu */
@@ -41,7 +42,7 @@ header {
     width: 100%;
     background-color: #ffffff;
     border-radius: 3px;
-    color: #531111;
+    color: #7d2121;
   }
   
   /* Navigation Menu */
@@ -62,7 +63,7 @@ header {
   }
   
   .nav-menu button:hover {
-    background-color: #dcadb6; /* Darker shade for hover effect */
+    background-color: #d47c8c; /* Darker shade for hover effect */
     border-radius: 5px;
     color: #5b1818;
   }
