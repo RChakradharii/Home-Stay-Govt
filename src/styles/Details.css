@@ -1,85 +1,102 @@
-/* Details Page Styles */
+/* General Container */
 .details-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fdf3e6; /* Light grey for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Heading Styles */
+.details-container h1 {
+  font-size: 2.5rem;
+  color: #7c2525; /* Calm blue for a soothing look */
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+/* Images Section */
+.details-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.details-images img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.details-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Description */
+.details-description {
+  font-size: 1.2rem;
+  color: #8e3434;
+  margin-bottom: 20px;
+}
+
+/* Pricing and Contact */
+.details-pricing,
+.details-contact {
+  font-size: 1.1rem;
+  color: #f1091c;
+  margin-bottom: 10px;
+}
+
+.details-pricing strong,
+.details-contact strong {
+  color: #8b1c1c; /* Highlight text */
+}
+
+/* Book Now Button */
+.book-now {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #9b181d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-now:hover {
+  background-color: #34495e;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .details-container {
+    padding: 15px;
   }
-  
-  .details-banner {
-    width: 100%;
-    height: auto;
+
+  .details-container h1 {
+    font-size: 2rem;
   }
-  
-  .details-banner img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+
+  .details-images {
+    flex-direction: column;
   }
-  
-  .details-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+
+  .details-images img {
+    max-width: 90%;
   }
-  
-  .details-info {
-    flex: 1 1 60%;
+
+  .book-now {
+    font-size: 1rem;
+    padding: 10px 15px;
   }
-  
-  .details-info h2 {
-    font-size: 32px;
-  }
-  
-  .details-info p {
-    font-size: 18px;
-    line-height: 1.6;
-  }
-  
-  .details-info .price {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .book-now-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .book-now-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .details-gallery {
-    flex: 1 1 35%;
-  }
-  
-  .details-gallery img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-  
-  /* Responsive Styles for Small Screens */
-  @media (max-width: 768px) {
-    .details-content {
-      flex-direction: column;
-    }
-  
-    .details-info {
-      flex: 1 1 100%;
-    }
-  
-    .details-gallery {
-      flex: 1 1 100%;
-    }
-  
-    .details-info h2 {
-      font-size: 28px;
-    }
-  }
-  
+}

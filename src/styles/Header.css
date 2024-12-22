@@ -1,97 +1,98 @@
-/* Header Container */
+/* General Header Styles */
 header {
+    background-color: #751527; /* Calm blue */
+    color: #eddede; /* White text for contrast */
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align everything to the left */
-    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
   
-  /* Title */
+  /* Header Container */
   .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
   }
   
+  /* Branding (Title) */
   .header-container h1 {
-    font-size: 24px;
+    font-size: 1.8rem;
+    margin: 0;
     font-weight: bold;
-    margin-left: 10px; /* Slightly shift title left */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
   }
   
-  /* Hamburger Icon */
+  /* Hamburger Menu */
   .hamburger {
     display: none;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 30px;
     height: 20px;
     cursor: pointer;
   }
   
   .hamburger span {
     display: block;
-    width: 25px;
     height: 3px;
-    background-color: #fff;
-    transition: all 0.3s ease;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    color: #531111;
   }
   
   /* Navigation Menu */
-  nav.nav-menu {
+  .nav-menu {
     display: flex;
-    justify-content: flex-start; /* Align buttons to the left */
-    align-items: center;
     gap: 15px;
-    transition: max-height 0.3s ease;
-    flex-wrap: wrap; /* Ensure buttons wrap in responsive views */
+    align-items: center;
   }
   
-  nav.nav-menu button {
-    background-color: #555;
-    color: #fff;
+  .nav-menu button {
+    background: none;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
+    color: #ead7d7;
+    font-size: 1rem;
+    padding: 10px 15px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease;
   }
   
-  nav.nav-menu button:hover {
-    background-color: #f39c12;
+  .nav-menu button:hover {
+    background-color: #dcadb6; /* Darker shade for hover effect */
+    border-radius: 5px;
+    color: #5b1818;
   }
   
-  /* Responsive Design */
+  /* Responsive Styles */
   @media (max-width: 768px) {
     .hamburger {
       display: flex;
-      margin-left: 10px; /* Align hamburger with left-aligned content */
     }
   
-    nav.nav-menu {
+    .nav-menu {
+      display: none;
       flex-direction: column;
-      gap: 10px;
-      max-height: 0; /* Hidden by default */
-      overflow: hidden;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #fdf3e6;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       width: 100%;
-      background-color: #333;
-      padding: 10px;
-      align-items: flex-start; /* Ensure buttons align left in responsive */
+      padding: 10px 0;
+      text-align: center;
     }
   
-    nav.nav-menu.open {
-      max-height: 300px; /* Adjust as needed for visible items */
+    .nav-menu.open {
+      display: flex;
     }
   
-    nav.nav-menu button {
-      width: 100%; /* Ensure buttons don't overflow */
-      text-align: left; /* Align button text to the left */
+    .nav-menu button {
+      width: 100%;
+      margin: 5px 0;
     }
   }
   

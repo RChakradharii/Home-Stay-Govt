@@ -1,135 +1,122 @@
+/* General Container */
 .contact-container {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .contact-details {
-    margin-bottom: 30px;
-  }
-  
-  .contact-details h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-  
-  .contact-details p {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .contact-details ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .contact-details ul li {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
-  .contact-form h3 {
-    margin-bottom: 15px;
-    font-size: 20px;
-  }
-  
-  .input-group {
-    margin-bottom: 15px;
-  }
-  
-  .input-group label {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
-  .input-group input,
-  .input-group textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .input-group textarea {
-    height: 150px;
-  }
-  
-  .submit-button {
-    padding: 12px 20px;
-    background-color: #007bff;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  .submit-button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Add at the bottom of your existing Contact.css file */
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fdf3e6;; /* Light beige for the background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
 
-/* Mobile devices */
+/* Heading Styles */
+.contact-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #a83245; /* Deep maroon for titles */
+  margin-bottom: 20px;
+}
+
+.contact-details h3,
+.contact-form h3 {
+  font-size: 1.5rem;
+  color: #a83245;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #a83245; /* Decorative underline */
+  padding-bottom: 5px;
+}
+
+.contact-details p {
+  font-size: 1rem;
+  color: #5a5a5a; /* Neutral grey text */
+}
+
+.contact-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-details li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.contact-details li strong {
+  color: #a83245; /* Highlight important text */
+}
+
+/* Input Groups */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 1rem;
+  color: #5a5a5a;
+  margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #a83245;
+  box-shadow: 0 0 5px rgba(168, 50, 69, 0.3);
+  outline: none;
+}
+
+/* Textarea */
+.input-group textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Submit Button */
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  background-color: #a83245;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #8c2b3c;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .contact-container {
-      padding: 15px;
-    }
-  
-    .contact-container h2 {
-      font-size: 1.5rem; /* Adjust font size */
-    }
-  
-    .contact-details h3 {
-      font-size: 1.2rem; /* Adjust font size */
-    }
-  
-    .contact-form h3 {
-      font-size: 1.2rem; /* Adjust font size */
-    }
-  
-    .input-group input, .input-group textarea {
-      width: 100%; /* Make form fields full-width */
-      font-size: 14px;
-      padding: 8px;
-    }
-  
-    .submit-button {
-      padding: 12px 20px; /* Adjust padding for mobile */
-    }
+  .contact-container {
+    padding: 15px;
   }
-  
-  /* Tablets (portrait) */
-  @media (max-width: 1024px) {
-    .contact-container {
-      padding: 20px;
-    }
-  
-    .contact-details h3 {
-      font-size: 1.5rem; /* Adjust font size for tablets */
-    }
-  
-    .contact-form h3 {
-      font-size: 1.5rem; /* Adjust font size */
-    }
-  
-    .input-group input, .input-group textarea {
-      font-size: 15px; /* Increase font size slightly */
-    }
-  
-    .submit-button {
-      padding: 14px 24px; /* Adjust button size for tablets */
-    }
+
+  .contact-container h2 {
+    font-size: 1.8rem;
   }
-  
+
+  .contact-details h3,
+  .contact-form h3 {
+    font-size: 1.3rem;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+}
